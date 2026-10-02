@@ -1,14 +1,15 @@
 //constants, values that will not change
 const candyBtn = document.getElementById("candy-btn")
-
+const upgradeClickBtn = document.getElementById("upgrd-click-btn")
 
 //variables. we're also going to 
-let totalCandy = 0;
-
+let totalCandy = 0
+const totalCandiesDisplay = document.getElementById("total-candies")
 
 let candyPerClick = 1
+const candiesPerClickDisplay = document.getElementById("candy-p-click")
 
-let clickUpgradeCost = 25;
+let clickUpgradeCost = 25
 
 
 
@@ -19,11 +20,12 @@ candyBtn.addEventListener("click", addCandy)
 
 //we add event listeners after variables but before main code. add another to run a function when 
 // the upgrade button is clicked*/
-clickUpgradeBtn.addEventListener("click", buyClickUpgrade)
+upgradeClickBtn.addEventListener("click", buyClickUpgrade)
 
 //function that adds candy to our total based on candy/click number, so long as we have less than 5000 candies
 function addCandy(){
-   
+   totalCandy += 1
+   totalCandiesDisplay.innerHTML = "candies: " + totalCandy
 }
 
 //check to see if we can buy an upgrade, so we can grey out or brighten purchase button. adds or removes special css classes
