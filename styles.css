@@ -1,17 +1,21 @@
 body{
     text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: rgb(203, 163, 255);
 }
+
+
 
 /*These colors are see through...almost greyed out*/
 .too-broke{
-    background-color: rgba(113, 37, 255, 0.2);
-    color:rgba(0, 0, 0, 0.2);
-    border: 0;
+    background-color: rgb(255, 0, 0);
+    color:rgb(0, 0, 0);
+    border: (2px, solid, rgba(0, 0, 0, 0.2));
 }
 
 /*These colors are brighter*/
 .not-broke{
-    background-color: rgb(113, 37, 255);
+    background-color: rgb(37, 255, 84);
     color:rgb(0, 0, 0);
     border: 0;
 }
